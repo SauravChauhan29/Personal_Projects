@@ -1,0 +1,29 @@
+.nav-link-ul2{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    margin-bottom: 0;
+}
+.nav-link-ul2 i{
+    font-size: 16px;
+}
+.nav-link-ul2 .nav-links{
+    padding: 2px ;
+}
+
+@media only screen and ( max-width: 430px) {
+    .nav-link-ul2  {
+        justify-content: space-evenly;
+    }
+    .nav-link-ul2 i {
+        font-size: 18px;
+    }
+    .nav-link-ul2 .nav-links{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding: 2px ;
+    }
+}

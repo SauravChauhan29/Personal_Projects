@@ -1,0 +1,41 @@
+d07da96cadcb710bc3e1bc4d15fb292a
+5ee12ca964ea1c29ba78036b8c65bb03
+f4970802a40d1b9dd87932789dc471ae
+
+
+https://api.openweathermap.org/data/3.0/onecall?lat=22.9920&lon=72.3773&appid={f4970802a40d1b9dd87932789dc471ae}
+https://api.openweathermap.org/data/2.5/forecast?lat=22.9920&lon=72.3773&appid=d07da96cadcb710bc3e1bc4d15fb292a
+
+
+
+
+
+
+
+
+
+
+  <table>
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>TITLE</th>
+                        <th>CATEGORY</th>
+                        <th>PRICE</th>
+                        <th>DESCRIPTION</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {
+                        datas.map((item) => (
+                            <tr key={item.id}>
+                                <td >{item.id}</td>
+                                <td >{item.title}</td>
+                                <td >{item.category}</td>
+                                <td >{item.price}</td>
+                                <td >{item.description}</td>
+                            </tr>
+                        ))
+                    }
+                </tbody>
+            </table>

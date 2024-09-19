@@ -1,0 +1,70 @@
+.wrapper {
+    height: 250px;
+    width: 200px;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.upperdiv, .lowerdiv {
+    width: 100%;
+}
+
+.upperdiv {
+    background: blue;
+    height: 60%;
+}
+
+.lowerdiv {
+    margin-top: 10px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.producttitle {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    /* font-weight: bold; */
+    
+}
+
+.priceboard {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    color: #888;
+    margin-bottom: 10px;
+}
+
+.addtocart, .readmore {
+    background-color: #f8f9fa;
+    border: 2px solid #007bff;
+    color: #007bff;
+    padding: 5px 5px;
+    text-decoration: none;
+    font-size: 14px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.addtocart:hover, .readmore:hover {
+    background-color: #007bff;
+    color: white;
+}
+
+.buttondiv {
+    display: flex;
+    justify-content: space-evenly;
+    /* margin-top: 20px; */
+}
+
+
+
+
+

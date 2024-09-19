@@ -1,0 +1,182 @@
+.nav-bar {
+    
+    border: 1px solid rgba(0, 0, 0, 0.596);
+    /* transition: 1s ease-in; */
+    /* position: relative; */
+    /* margin-bottom:5px ; */
+
+}
+
+
+.logo-navbar  .main-navbar  {
+    font-size: clamp(2em,3vw,3em);
+    font-family: "Dancing Script", cursive;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    text-decoration: none;
+    color: black;
+  
+}
+
+.nav-bar-wrapper {
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: none;
+    padding: 0px 100px;
+
+
+}
+
+.nav-links {
+    list-style: none;
+
+    cursor: pointer;
+    transition: ease .1s;
+    padding: 10px;
+}
+
+.nav-links .main-navbar {
+    color: black;
+    text-decoration: none;
+    padding-left: 5px;
+}
+
+.nav-links:hover {
+    color: black;
+    /* border-radius: 10px; */
+    background-color: #6b6b6b4d;
+}
+
+.nav-links:hover .main-navbar {
+    color: black;
+}
+
+
+.nav-link-ul {
+    /* margin: 5px 0;
+    background: transparent; */
+    display: flex;
+    /* justify-content: center; */
+    /* align-items: center; */
+}
+
+.search-icon {
+    margin: 30px 0;
+
+}
+
+
+/* media querry  */
+
+.dot{
+height: 15px;
+width: 15px;
+border-radius: 50%;
+display: flex;
+align-items: center;
+justify-content: center;
+/* align-content: center; */
+background: red;
+color: aliceblue;
+position: absolute;
+top: -50%;
+left: 50%;
+font-size: 10px;
+}
+.doton{
+    display: none;
+}
+
+
+
+
+
+
+
+.blockoff {
+    display: none;
+    
+}
+
+.blocktoggle {
+  
+    width: 100%;
+    
+    padding: 20px 0px;
+    display: flex;
+    
+    justify-content: center;
+    
+    background-color: white;
+    border: 1px solid;
+    
+
+    z-index: 1;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    /* box-shadow: 0 -1px 5px black; */
+    border-radius: 10px 10px 0 0 ;
+    outline: none;
+    display: none;
+    
+}
+
+
+
+.blockonlogo {
+    display: block;
+
+
+}
+
+
+@media only screen and (max-width: 450px) {
+    .nav-bar {
+        margin-bottom:10px  ;
+        width: 100%;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        background-color: white;
+    }
+
+    .nav-link-ul {
+        display: none;
+    }
+
+    .nav-bar-wrapper {
+
+        padding: 10px 15px;
+        justify-content: space-between;
+    }
+    .nav-links:hover {
+        
+        background-color: transparent;
+    }
+    .blocktoggle {
+  
+        
+        display: block;
+        padding: 10px 0;
+        
+    }
+    
+
+
+}
+@media (min-width: 450) and (max-width:768px){
+    .nav-bar-wrapper {
+
+        
+        justify-content: space-evenly;
+       
+        padding: 0;
+    
+    
+    }
+}

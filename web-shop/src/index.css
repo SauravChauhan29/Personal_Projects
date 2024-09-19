@@ -1,0 +1,16 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Merriweather", serif;
+}
+
+@tailwind base;
+@tailwind components;
+
+.h2-custom {
+    @apply my-4 text-center text-gray-800 font-semibold text-5xl;
+}
+@tailwind utilities;
+
+

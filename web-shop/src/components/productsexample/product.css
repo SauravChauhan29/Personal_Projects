@@ -1,0 +1,135 @@
+.categoryselection{
+    padding: 10px;
+    border-radius: 20px;
+    font-family: Geneva, Tahoma, sans-serif;
+    /* text-align: center; */
+    margin-right:20px ;
+}
+.wrapper{
+    margin: 10px;
+
+}
+
+
+
+
+
+.cardwrapper {
+
+    height: 320px;
+    width: 210px;
+    border: 1px solid rgba(0, 0, 0, 0.322);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex ;
+    flex-direction: column;
+}
+
+/* .upperdiv, .lowerdiv {
+    width: 100%;
+} */
+
+.upperdiv {
+    /* background: blue; */
+    height: 60%;
+}
+img {
+     
+    width: 100%;
+    height: 100%; 
+    object-fit: contain; 
+}
+
+
+.lowerdiv {
+    margin-top: 10px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.producttitle {
+    padding: 0 20px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-size: 14px; 
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap; 
+}
+
+.priceboard {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    color: #888;
+    margin-bottom: 10px;
+}
+
+.addtocart, .readmore {
+
+    background-color: #f8f9fa;
+    border: 2px solid #007bff;
+    color: #007bff;
+    padding: 5px 5px;
+    text-decoration: none;
+    font-size: 14px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+.addtocart{
+width: 75%;
+}
+.readmore {
+width: 19%;
+}
+
+.addtocart:hover, .readmore:hover {
+    background-color: #007bff;
+    color: white;
+}
+
+.buttondiv {
+    display: flex;
+    justify-content: space-evenly;
+    /* margin-top: 20px; */
+}
+
+
+
+@media only screen and (max-width: 1200px){}
+
+@media only screen and (max-width: 992px){}
+
+@media only screen and (max-width: 768px){}
+
+@media only screen and (max-width: 425px){
+    .wrapper{
+        margin: 0;
+    }
+    .cardcontainer{
+        gap: 10px;
+    }
+    .cardwrapper{
+        height: 115px;
+        width: 100%;
+        flex-direction: row;
+        padding: 5px;
+        /* justify-content: space-around; */
+    }
+    .lowerdiv{
+        width: 60%;
+        margin: 0;
+        justify-content:center ;
+    }
+    .upperdiv {
+        /* background: blue; */
+        height: 100%;
+        width: 40%;
+    }
+    /* .wrapper{
+        margin: 10px;
+        padding-top: 20px ;
+    } */
+}

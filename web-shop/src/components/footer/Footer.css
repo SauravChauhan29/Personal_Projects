@@ -1,0 +1,24 @@
+.footer-wrapper a{
+text-decoration: none;
+font-size: clamp( 1rem, 1.2vw,1.4rem);
+color: black;
+
+}
+.footer-container{
+    display: flex;
+    justify-content: space-evenly;
+    margin: 10px;
+}
+
+@media only screen and (max-width: 425px){
+    .footer-wrapper {
+      
+        margin-bottom: 65px;
+    }
+}
+
+@media only screen and (min-width: 450px){
+    .footer-wrapper{
+        margin-bottom: 10px;
+    }
+}
