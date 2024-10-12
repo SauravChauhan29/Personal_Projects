@@ -1,0 +1,70 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: 1px solid black;
+}
+
+.container {
+    height: 100vh;
+    display: grid;
+    place-items: center;
+    overflow: hidden;
+    position: relative;
+}
+
+.rotator {
+    height: 300vh;
+    width: 300vw;
+    background: black;
+    position: absolute;
+    top: -100%;
+    left: -100%;
+    display: flex;
+    transform: rotate(39deg);
+
+}
+
+.rotator .bggg {
+    height: 100%;
+    width: 50%;
+    transform: translateX(-5px );
+    background: lightcoral;
+}
+
+.rotator .bggg2 {
+    height: 100%;
+    width: 50%;
+    transform: translateX(5px);
+    background: rgb(189, 44, 44);
+}
+
+
+.wrapper {
+    height: 500px;
+    width: 400px;
+    border: 2px solid pink;
+    /* background-color: white; */
+    backdrop-filter: blur(10px);
+    z-index: 1;
+    padding: 30px;
+
+}
+
+
+
+
+
+
+/* inside wrapper css design */
+
+.switch-div{
+    margin:  auto ;
+    display: flex;
+    width: fit-content;
+}
+.switch-div .signup-tag,.signin-tag{
+    padding: 10px 40px;
+    border-radius: 10px;
+
+}
