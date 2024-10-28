@@ -2,7 +2,11 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    border: 1px solid black;
+    /* border: 1px solid black; */
+}
+
+:root {
+    --postion: 0%
 }
 
 .container {
@@ -16,7 +20,7 @@
 .rotator {
     height: 300vh;
     width: 300vw;
-    background: black;
+    background: #95DBE5FF;
     position: absolute;
     top: -100%;
     left: -100%;
@@ -28,43 +32,211 @@
 .rotator .bggg {
     height: 100%;
     width: 50%;
-    transform: translateX(-5px );
-    background: lightcoral;
+    transform: translateX(-5px);
+    background: #078282FF;
 }
 
 .rotator .bggg2 {
     height: 100%;
     width: 50%;
     transform: translateX(5px);
-    background: rgb(189, 44, 44);
+    background: #339E66FF;
 }
 
 
 .wrapper {
-    height: 500px;
+    height: 550px;
     width: 400px;
     border: 2px solid pink;
-    /* background-color: white; */
     backdrop-filter: blur(10px);
     z-index: 1;
-    padding: 30px;
+    padding: 20px;
+    overflow: hidden;
+}
 
+.signin-container {
+    /* background-color: blue; */
+    height: 80%;
+    position: relative;
+}
+
+.form-wrapper {
+    /* background-color: lightcoral; */
+    height: 100%;
+}
+
+.form-wrapper2 {
+    /* background-color: lightcoral; */
+    position: absolute;
+    height: 100%;
+    top: 0;
+    left: 120%;
+    width: 100%;
+    margin-top: 25px;
+}
+
+.form-wrapper form {
+    /* background-color: blue; */
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
 }
 
 
-
+.form-wrapper2 form .form-group {
+    margin-bottom: 20px;
+}
 
 
 
 /* inside wrapper css design */
 
-.switch-div{
-    margin:  auto ;
+
+
+.switch-div {
+    margin: 0 auto;
     display: flex;
     width: fit-content;
+    gap: 5px;
+    position: relative;
+    z-index: 1;
+    border-radius: 12px;
+    /* overflow: hidden; */
 }
-.switch-div .signup-tag,.signin-tag{
-    padding: 10px 40px;
+
+/* Background moving highlight */
+.sign-bg {
+
+    position: absolute;
+    top: 0;
+    left: var(--postion);
+    height: 100%;
+    width: 125px;
+    background-color: blue;
+    z-index: 1;
     border-radius: 10px;
+    transition: 0.4s ease-in-out;
+}
+
+/* Sign up and Sign in buttons */
+.switch-div .signup-tag,
+.signin-tag {
+
+    padding: 10px 0;
+    width: 125px;
+    /* height: 35px; */
+    text-align: center;
+    border-radius: 10px;
+    outline: none;
+    border: 1px solid black;
+    background-color: transparent;
+    position: relative;
+    z-index: 2;
+    cursor: pointer;
+    font-weight: bold;
+    color: black;
+    transition: color 0.3s ease-in-out;
+}
+
+
+
+
+
+
+
+
+
+/* Form group container */
+.form-group {
+    position: relative;
+    /* margin-bottom: 20px; */
+}
+
+/* Input styling */
+.form-group input {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    outline: none;
+    transition: 0.3s;
+}
+
+.psd {
+    margin-bottom: 5px;
+}
+
+/* Label styling */
+.form-group label {
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+    font-size: 16px;
+    color: #888;
+    transition: 0.3s;
+    pointer-events: none;
+}
+
+/* Floating label effect */
+.form-group input:focus+label,
+.form-group input:not(:placeholder-shown)+label {
+    top: -0px;
+    left: 10px;
+    font-size: 16px;
+    color: black;
+    padding: 3px 10px;
+    font-weight: 600;
+    font-style: italic;
+    background-color: white;
+    border: black;
+    border-radius: 10px;
+}
+.form-group span{
+  
+    font-size: 14px;
+    color: black;
+    font-weight: 600;
+    font-style: italic;
+}
+.form-group input:focus,
+.form-group input:not(:placeholder-shown) {
+    padding-top: 15px;
+    border: 1px solid black;
+}
+
+/* Button styling */
+.btn {
+    padding: 10px 15px;
+    width: 100%;
+    font-size: 16px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+
+
+
+
+
+.error-message {
+    color: red;
+    font-size: 12px;
+    display: none;
+    /* Initially hidden */
+}
+
+.success {
+    color: blue;
+    font-size: 20px;
+    text-align: center;
+    background-color: white;
+    padding: 10px;
+    border-radius: 20px;
 
 }
